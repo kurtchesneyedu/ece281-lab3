@@ -26,4 +26,8 @@ env:
 
 If successful then GHDL will quietly exit with a `0` code.
 If any of the `assert` statements fail **with** `severity error` then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
+
+## Testbench Waveform
+
+We first test the hazard functionality, then right blinkers, then left blinkers. The end state is no input to the FSM, resulting in no output on any of the lights.
 ![Test Bench Waveform](<Thunderbitd TB-1.png>)
